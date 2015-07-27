@@ -84,19 +84,27 @@ set nofoldenable
 set scrolloff=5
 set mouse=a
 
-"" set tab = number of spaces
-set tabstop=4
-"" set autoindent tabstop
-set shiftwidth=4
-"" convert tabs to spaces
-set expandtab
-"" fix backspace
-set backspace=2
-"" text width
-set tw=95
-
 "" Enable 256 colours
 set t_Co=256
+"" text width
+set tw=95
+"" fix backspace: behave normally
+set backspace=2
+
+
+"" tabs'n'stuff
+"" convert tabs to spaces
+set expandtab
+"" set tab = number of spaces
+"set tabstop=4
+"" set autoindent tabstop
+" config for indentation mixed hard tabs/spaces
+" http://vim.wikia.com/wiki/Indenting_source_code
+set shiftwidth=4
+set softtabstop=4
+"" smart tabstops
+set smarttab
+
 
 "" Set listchars and enable list mode by default. (see :dig for other digraphs)
 set lcs=tab:»·,trail:·
