@@ -1,9 +1,17 @@
-snippet ( "round brackets"
-\left( ${1:<++>} \right) ${0:<++>}
+snippet tikzcd "Insert tikzcd figure (centered) and correct \capstart" b
+\begin{figure}[${1:htb!}]
+\begin{center}
+\capstart
+  \begin{tikzcd}
+    ${4:body}
+  \end{tikzcd}
+  \caption{\label{fig:${2:label}} ${3:caption}}
+\end{center}
+\end{figure}
 endsnippet
-snippet [ "square brackets"
-\left[ ${1:<++>} \right] ${0:<++>}
-endsnippet
-snippet { "curly brackets"
-\left\{ ${1:<++>} \right\} ${0:<++>}
+
+snippet lemma "Lemma environment, with label, short title, proof" b
+\begin{lemma}[${1:short title}]\label{lem:${2:label}}
+  ${0:lemma body}
+\end{lemma}
 endsnippet

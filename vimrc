@@ -27,9 +27,9 @@ Plugin 'scrooloose/nerdcommenter'
 "" snippet engine: https://github.com/SirVer/ultisnips
 Plugin 'SirVer/ultisnips'
 "" Settings: triggerr configuration. !!! don't let this clash with YouCompleteMe
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-j>"
-let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+let g:UltiSnipsExpandTrigger="<TAB>"
+let g:UltiSnipsJumpForwardTrigger="<TAB>"
+let g:UltiSnipsJumpBackwardTrigger="<S-TAB>"
 "" ultisnips user defined snippets are here: $HOME/.vim/UltiSnips/
 
 "" preload some snippets: https://github.com/honza/vim-snippets
@@ -38,8 +38,8 @@ Plugin 'honza/vim-snippets'
 "" autocomplete engine: https://github.com/Valloric/YouCompleteMe
 Plugin 'Valloric/YouCompleteMe'
 "" Settings: trigger configuration
-let g:ycm_key_list_select_completion = ['<c-n>']
-let g:ycm_key_list_previous_completion = ['<s-c-n>']
+let g:ycm_key_list_select_completion = ['<C-N>']
+let g:ycm_key_list_previous_completion = ['<C-S-N>']
 
 "" latex plugin: https://github.com/parasite/vimlatexmacros
 Plugin 'parasite/vimlatexmacros'
