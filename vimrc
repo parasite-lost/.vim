@@ -35,11 +35,15 @@ let g:UltiSnipsJumpBackwardTrigger="<S-TAB>"
 "" preload some snippets: https://github.com/honza/vim-snippets
 Plugin 'honza/vim-snippets'
 
+"" Latex-Plugin
+"Plugin 'LaTeX-Box-Team/LaTeX-Box'
+
 "" autocomplete engine: https://github.com/Valloric/YouCompleteMe
 Plugin 'Valloric/YouCompleteMe'
 "" Settings: trigger configuration
 let g:ycm_key_list_select_completion = ['<C-N>']
-let g:ycm_key_list_previous_completion = ['<C-S-N>']
+let g:ycm_key_list_previous_completion = ['<C-P>']
+
 
 "" latex plugin: https://github.com/parasite/vimlatexmacros
 Plugin 'parasite/vimlatexmacros'
@@ -176,6 +180,8 @@ colorscheme badwolf
 "let g:Tex_UseMakefile = 1
 "let g:Tex_GotoError = 0 " 0: don't jump to quickfix window, 1: jump curser to first error in quickfix window
 "let g:Tex_CompileRule_pdf = 'latexmk -pdf -interaction=nonstopmode -file-line-error -synctex=1 $*'
+
+"autocmd BufRead,BufNewFile *.tex set iskeyword+=:
 
 "" vim powerline
 python from powerline.vim import setup as powerline_setup
