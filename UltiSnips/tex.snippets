@@ -1,17 +1,41 @@
-snippet tikzcd "Insert tikzcd figure (centered) and correct \capstart" b
-\begin{figure}[${1:htb!}]
-\begin{center}
-\capstart
-  \begin{tikzcd}
-    ${4:body}
+snippet tikzcd "Insert tikzcd display" b
+\begin{displaymath}
+  \begin{tikzcd}[${1:options}]
+    ${0:body}
   \end{tikzcd}
-  \caption{\label{fig:${2:label}} ${3:caption}}
-\end{center}
-\end{figure}
+\end{displaymath}
 endsnippet
 
-snippet lemma "Lemma environment, with label, short title, proof" b
-\begin{lemma}[${1:short title}]\label{lem:${2:label}}
+snippet lemma "Lemma environment, with label and title" b
+\begin{lemma}[${1:short title}]
+\label{lem:${2:label}}
   ${0:lemma body}
 \end{lemma}
+endsnippet
+
+snippet definition "Definition environment, label, title" b
+\begin{definition}[${1:short title}]
+\label{def:${2:label}}
+  ${0:definition body}
+\end{definition}
+endsnippet
+
+snippet theorem "Theorem environment, label, title" b
+\begin{theorem}[${1:short title}]
+\label{thm:${2:label}}
+  ${0:theorem body}
+\end{theorem}
+endsnippet
+
+snippet prop "Proposition environment, label, title" b
+\begin{proposition}[${1:short title}]
+\label{prop:${2:label}}
+  ${0:theorem body}
+\end{proposition}
+endsnippet
+
+snippet proof "Proof environment" b
+\begin{proof}
+  ${0:proof body}
+\end{proof}
 endsnippet
