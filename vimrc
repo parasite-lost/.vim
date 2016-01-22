@@ -48,6 +48,12 @@ let g:ycm_key_list_previous_completion = ['<C-P>']
 "" latex plugin: https://github.com/parasite/vimlatexmacros
 Plugin 'parasite/vimlatexmacros'
 
+"" easy motion like cVim
+Plugin 'easymotion/vim-easymotion'
+let g:EasyMotion_use_upper = 1
+" let g:EasyMotion_smartcase = 1
+
+
 "" All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -137,6 +143,9 @@ nmap <silent> <Leader>l :set list!<CR>
 nmap <silent> <Leader>m :w<CR>:make<CR>:redraw!<CR>:cw<CR>
 nmap <silent> <Leader>e :.cc<CR>
 
+" easymotion
+nmap s <Plug>(easymotion-s)
+
 "" Unbind the cursor keys in insert, normal and visual modes to unlearn them
 for prefix in ['i', 'n', 'v']
     for key in ['<Up>', '<Down>', '<Left>', '<Right>']
@@ -152,9 +161,10 @@ colorscheme badwolf
 "nmap <F7> :tabnew<CR>
 "nmap <F8> <ESC>:tabclose<CR>
 
-"" vim latex suite stuff
-"let g:tex_flavor='latex'
+" TeX stuff
+let g:tex_flavor='latex'
 
+"" vim latex suite stuff
 "let g:Tex_TreatMacViewerAsUNIX = 1
 "let g:Tex_ExecuteUNIXViewerInForeground = 1
 "let g:Tex_ViewRule_pdf = 'open -a Skim'
