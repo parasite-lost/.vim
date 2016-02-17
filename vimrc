@@ -71,10 +71,10 @@ filetype plugin indent on    " required
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 "" viminfo
-set viminfo+=n~/.vim/cache/viminfo
+set viminfo+=n$HOME/.vim/cache/viminfo
 "" Spellcheck
 set spelllang=en
-set spellfile=$HOME/.vim/cache/spell.en.utf-8.add
+set spellfile=$HOME/.vim/spell/en.utf-8.add
 "" syntax highlighting
 syntax on
 "" search highlighting
