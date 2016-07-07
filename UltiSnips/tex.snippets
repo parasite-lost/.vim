@@ -6,32 +6,39 @@ snippet tikzcd "Insert tikzcd display" b
 \end{displaymath}
 endsnippet
 
-snippet lem "Lemma environment, with label and title" b
-\begin{lem}[${1:short title}]
-\label{lem:${2:label}}
-  ${0:lemma body}
-\end{lem}
-endsnippet
-
 snippet defn "Definition environment, label, title" b
-\begin{defn}[${1:short title}]
+\begin{definition}[${1:short title}]
 \label{def:${2:label}}
   ${0:definition body}
-\end{defn}
+\end{definition}
 endsnippet
 
 snippet thm "Theorem environment, label, title" b
-\begin{thm}[${1:short title}]
+\begin{theorem}[${1:short title}]
 \label{thm:${2:label}}
   ${0:theorem body}
-\end{thm}
+\end{theorem}
 endsnippet
 
 snippet prop "Proposition environment, label, title" b
-\begin{prop}[${1:short title}]
+\begin{proposition}[${1:short title}]
 \label{prop:${2:label}}
   ${0:theorem body}
-\end{prop}
+\end{proposition}
+endsnippet
+
+snippet lem "Lemma environment, with label and title" b
+\begin{lemma}[${1:short title}]
+\label{lem:${2:label}}
+  ${0:lemma body}
+\end{lemma}
+endsnippet
+
+snippet cor "Corollary environment, with label and title" b
+\begin{corollary}[${1:short title}]
+\label{cor:${2:label}}
+  ${0:corollary body}
+\end{corollary}
 endsnippet
 
 snippet proof "Proof environment" b

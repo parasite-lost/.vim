@@ -44,6 +44,19 @@ Plugin 'Valloric/YouCompleteMe'
 let g:ycm_key_list_select_completion = ['<C-N>']
 let g:ycm_key_list_previous_completion = ['<C-P>']
 
+" plugin for org-mode: (hyper)link handling
+Plugin 'vim-scripts/utl.vim'
+" Utl.vim
+if has("mac")
+    let g:utl_cfg_hdl_scm_http_system = "silent !open '%u'"
+end
+
+" plugin for org-mode: time/date handling
+Plugin 'tpope/vim-speeddating'
+
+"" org-mode
+Plugin 'jceb/vim-orgmode'
+
 
 "" latex plugin: https://github.com/parasite/vimlatexmacros
 Plugin 'parasite/vimlatexmacros'
@@ -97,7 +110,7 @@ set mouse=a
 "" Enable 256 colours
 set t_Co=256
 "" text width
-set tw=95
+set tw=0 " no linebreaks while codeing. for text files set to 95 per ftplugin
 "" fix backspace: behave normally
 set backspace=2
 
@@ -145,6 +158,9 @@ nmap <silent> <Leader>e :.cc<CR>
 
 " easymotion
 nmap s <Plug>(easymotion-s)
+
+" org-mode
+nmap <leader>x <Plug>OrgCheckBoxToggle
 
 "" Unbind the cursor keys in insert, normal and visual modes to unlearn them
 for prefix in ['i', 'n', 'v']
