@@ -158,6 +158,9 @@ nmap <silent> <Leader>l :set list!<CR>
 nmap <silent> <Leader>m :w<CR>:make<CR>:redraw!<CR>:cw<CR>
 nmap <silent> <Leader>e :.cc<CR>
 
+" TAB toggle fold
+nmap <silent> <TAB> za
+
 " easymotion
 nmap s <Plug>(easymotion-s)
 
