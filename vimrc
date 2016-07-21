@@ -102,7 +102,7 @@ set modeline
 set number
 
 set foldmethod=syntax
-set foldlevelstart=1
+set foldlevelstart=99
 "set foldlevel=0
 set nofoldenable
 
