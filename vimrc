@@ -100,6 +100,7 @@ set ruler
 set showcmd
 set modeline
 set number
+set cursorline
 
 set foldmethod=syntax
 set foldlevelstart=99
@@ -184,7 +185,7 @@ colorscheme badwolf
 
 " TeX stuff
 let g:tex_flavor='latex'
-let g:tex_fold_enabled=1
+"let g:tex_fold_enabled=1
 
 "" vim latex suite stuff
 "let g:Tex_TreatMacViewerAsUNIX = 1
