@@ -66,6 +66,12 @@ Plugin 'easymotion/vim-easymotion'
 let g:EasyMotion_use_upper = 1
 " let g:EasyMotion_smartcase = 1
 
+" ctrl-p search files
+Plugin 'kien/ctrlp.vim'
+
+" nerdtree
+Plugin 'scrooloose/nerdtree'
+let NERDTreeIgnore=['\.pyc$', '\~$', '\.o'] "ignore files in NERDTree
 
 "" All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -158,6 +164,8 @@ let mapleader = ","
 nmap <silent> <Leader>l :set list!<CR>
 nmap <silent> <Leader>m :w<CR>:make<CR>:redraw!<CR>:cw<CR>
 nmap <silent> <Leader>e :.cc<CR>
+
+nmap <silent> <Leader>n :NERDTreeToggle<CR>
 
 " TAB toggle fold
 nmap <silent> <TAB> za
